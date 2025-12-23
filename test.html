@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NobleTech - Build Amazing Apps</title>
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <span class="logo">
+            <i class="fa-solid fa-laptop"> NobleTech</i>
+        </span>
+        <a href="login.html">Sign up/Log in</a>
+    </header>
+
+    <section class="hero">
+        <h1>Build Amazing Apps Fast</h1>
+        <p>
+            We turn your ideas into powerful mobile & web apps
+        </p>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Fast Development</h3>
+            <p>
+                Launch in weeks, not months
+            </p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-shield"></i>
+            <h3>Secure & Reliable</h3>
+            <p>
+                Top-level security built in
+            </p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-mobile"></i>
+            <h3>Mobile First</h3>
+            <p>
+                Perfect on every device
+            </p>
+
+        </div>
+        <a href="login.html">
+            <button class="cta-btn" id="load-btn">
+                <span class="btn-text">Create an account</span>
+                <span class="spinner"></span>
+            </button>
+        </a>
+        <h4>already have an account? <a href="#">Log in</a></h3>
+    </section>
+
+
+
+    <footer>
+        <p>
+            &copy; 2025 NobleTech. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.querySelector('.cta-btn').addEventListener('click', function() {
+            this.classList.add('loading');
+            setTimeout(() => {
+                this.classList.remove('loading');
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
